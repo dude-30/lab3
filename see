@@ -97,3 +97,15 @@ do
     sum=`expr $sum + ${numbers[$i]}`
 done
 echo "The summation of $num is : $sum"
+
+// try this if works for palin
+echo "Enter a string:"
+read str
+#rev=$(expr $str|rev)
+rev=`expr $str|rev`
+if [ $rev=$str ]
+then
+echo "the given string is palindrome "
+else
+echo "the given string is not palindrome "
+fi
